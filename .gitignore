@@ -1,3 +1,4 @@
 .idea
 
-dev/GatorRator/node_modules
+dev/GatorRater/node_modules
+dev/EvalsToDB/node_modules
