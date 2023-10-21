@@ -1,7 +1,0 @@
-{
-  "name": "EvalsToDB",
-  "version": "1.0.0",
-  "dependencies": {
-    "@types/node": "^20.8.5"
-  }
-}
