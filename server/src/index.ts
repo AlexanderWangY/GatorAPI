@@ -1,14 +1,16 @@
-import express from "express";
+import express, {Request, Response} from 'express'
 
-const app = express();
-const port = 8080; // default port to listen
+const app = express()
+const port = process.env.PORT || 8080
 
-// define a route handler for the default home page
-app.get("/", (req, res) => {
-    res.send("Hello world!");
-});
+app.get('/', (_req: Request, res: Response) => {
+    return res.send('Express Typescript on Vercel')
+})
 
-// start the Express server
+app.get('/ping', (_req: Request, res: Response) => {
+    return res.send('pong 🏓')
+})
+
 app.listen(port, () => {
-    console.log(`server started at http://localhost:${port}`);
-});
+    return console.log(`Server is listening on ${port}`)
+})
