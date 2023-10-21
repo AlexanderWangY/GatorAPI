@@ -1,32 +1,25 @@
 {
-	"name": "express-typescript-vercel-part2",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"start": "nodemon api/index.ts",
-		"build": "tsc",
-		"ts.check": "tsc --project tsconfig.json",
-		"add-build": "git add dist",
-		"test": "echo \"Error: no test specified\" && exit 1"
-	},
-	"pre-commit": [
-		"ts.check",
-		"build",
-		"add-build"
-	],
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devDependencies": {
-		"@types/express": "^4.17.20",
-		"@types/node": "^20.8.7",
-		"nodemon": "^3.0.1",
-		"pre-commit": "^1.2.2",
-		"ts-node": "^10.9.1",
-		"typescript": "^4.8.4"
-	},
-	"dependencies": {
-		"express": "^4.18.2"
-	}
+  "name": "crypto",
+  "repository": "https://github.com/vercel/examples.git",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "canary",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "@types/react": "latest",
+    "eslint": "^8.36.0",
+    "eslint-config-next": "canary",
+    "turbo": "^1.8.5",
+    "typescript": "4.7.4"
+  }
 }
